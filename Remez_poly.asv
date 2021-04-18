@@ -92,9 +92,9 @@ end % конец алгоритма Ремеза
 figure;
 plot(x_sigmas, y_sigmas, 'k*');
 line(x_sigmas, y_sigmas);
-xticks(1:1:number_of_step);
 axis tight;
 legend('значение сигмы на каждом шаге алгоритма Ремеза', 'Location', 'SouthEast');
+ax.XTick = 1:1:number_of_steps;
 xlabel('step №');
 ylabel('sigma');
 end
